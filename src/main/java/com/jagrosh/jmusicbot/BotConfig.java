@@ -97,7 +97,7 @@ public class BotConfig
             boolean write = false;
 
             // validate bot token
-            if(token==null || token.isEmpty() || token.equalsIgnoreCase("BOT_TOKEN_HERE"))
+            if(token==null || token.isEmpty() || token.equalsIgnoreCase("MTAyOTk0NDQ2MzA1OTA3NTE2Mg.GBw2GP.k83Oh3ZY2A_cmupTyJrA_EhqBlfY9pHT-B7NCQ"))
             {
                 token = prompt.prompt("Please provide a bot token."
                         + "\nInstructions for obtaining a token can be found here:"
@@ -154,7 +154,7 @@ public class BotConfig
     
     private void writeToFile()
     {
-        byte[] bytes = loadDefaultConfig().replace("BOT_TOKEN_HERE", token)
+        byte[] bytes = loadDefaultConfig().replace("MTAyOTk0NDQ2MzA1OTA3NTE2Mg.GBw2GP.k83Oh3ZY2A_cmupTyJrA_EhqBlfY9pHT-B7NCQ", token)
                 .replace("0 // OWNER ID", Long.toString(owner))
                 .trim().getBytes();
         try 
